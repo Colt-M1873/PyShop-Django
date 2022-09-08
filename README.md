@@ -56,7 +56,7 @@ python manage.py runserver
 
 然后就能在`http://localhost:8000/` 或者 `http://127.0.0.1:8000/`看到如下的页面，表示运行成功
 
-![image-20220905174844545](.\PyShop_Django.assets\image-20220905174844545.png)
+![image-20220905174844545](./PyShop_Django.assets/image-20220905174844545.png)
 
 ## 创建Products app
 
