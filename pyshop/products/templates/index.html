@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+<html>
+    {% block content %}
+        <h1>
+        Products 
+        </h1>
+        <div class="row">
+            {% for product in products %}
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ product.image_url }}" class="card-img-top" alt="no image">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ product.name }}</h5>
+                      <p class="card-text">{{product.price}}</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <!-- <li>{{ product.name }} (${{product.price}})</li> -->
+            {% endfor %}
+        </div>
+        <ul>
+
+
+            <!-- {% for product in products %}
+                <li>{{ product.name }} (${{product.price}})</li>
+            {% endfor %} -->
+            <!-- <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li> -->
+        </ul>
+    {% endblock  %}
+</html>
